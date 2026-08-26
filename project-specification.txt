@@ -1,0 +1,721 @@
+You are an expert senior UI/UX designer, frontend engineer, Flask developer, and premium real-estate website designer.
+
+I want you to DESIGN AND BUILD the complete frontend-focused website for a Nigerian real-estate company called:
+
+CHUBBY PROPERTY DEVELOPMENT LTD
+
+IMPORTANT:
+For this phase, focus primarily on the DESIGN, UI/UX, CONTENT, RESPONSIVENESS, and FRONTEND EXPERIENCE.
+
+Do NOT over-engineer the backend yet.
+We will build the database, admin dashboard, property management system, authentication, advanced SEO infrastructure, analytics, etc. later.
+
+However, the project MUST be structured as a Flask application so that backend functionality can easily be added later.
+
+==================================================
+1. COMPANY INFORMATION
+==================================================
+
+Company:
+Chubby Property Development Ltd
+
+Business:
+Real estate consultancy and property management company.
+
+Operating area:
+Nigeria / nationwide.
+
+Existing company positioning:
+
+"Chubby Property Development Ltd is a trusted real estate consultant and property management company operating across all states in Nigeria. We specialize in helping individuals and businesses buy, sell, and manage real estate properties with professionalism and transparency."
+
+The company provides:
+
+- Real Estate Consultancy
+- Property Management
+- Buying and Selling of Properties
+- Real Estate Investment Advisory
+- Property Valuation and Documentation Support
+
+Mission:
+
+"To simplify real estate transactions and property management while providing clients with trustworthy, efficient, and profitable solutions."
+
+Key strengths:
+
+- Expertise in the Nigerian real estate market
+- Transparent and client-focused services
+- Nationwide property solutions
+- Professional guidance at every step
+- Commitment to excellence and integrity
+
+Brand philosophy:
+
+"At Chubby Property Development Ltd, we believe that real estate is more than just property—it is about creating value and building lasting relationships."
+
+The website should communicate:
+TRUST
+PROFESSIONALISM
+PREMIUM REAL ESTATE
+TRANSPARENCY
+INVESTMENT
+NIGERIAN MARKET EXPERTISE
+
+==================================================
+2. DESIGN DIRECTION
+==================================================
+
+Create a PREMIUM, MODERN, HIGH-END Nigerian real-estate website.
+
+Do NOT make it look like a generic WordPress real-estate template.
+
+Avoid:
+- cheap-looking gradients
+- excessive rounded cards
+- excessive animations
+- childish UI
+- emoji-heavy interfaces
+- generic house icons
+- cluttered layouts
+- stock-template appearance
+
+Design direction:
+
+- Deep navy / near-black primary color
+- Warm gold accent
+- White / off-white content backgrounds
+- Large elegant typography
+- Strong visual hierarchy
+- Premium property photography
+- Generous whitespace
+- Sophisticated cards
+- Subtle borders
+- Subtle shadows
+- Smooth transitions
+- Modern navigation
+- Editorial/luxury real-estate feel
+
+The website should feel like a company that handles serious property transactions.
+
+Use Lucide icons or another clean icon library rather than random emoji icons.
+
+==================================================
+3. HERO SECTION
+==================================================
+
+Create a visually impressive full-width hero section.
+
+Use an AI-generated premium luxury Nigerian/African residential property image as the BACKGROUND.
+
+IMPORTANT:
+This hero image is promotional/visual only.
+It must NOT be presented as an actual Chubby Properties listing.
+
+Hero headline:
+
+"Find Land. Build Wealth. Own Property."
+
+Supporting text:
+
+"Discover carefully selected properties and investment opportunities across Nigeria."
+
+Primary CTA:
+
+"Explore Properties"
+
+Secondary CTA:
+
+"Talk With an Agent"
+
+The Talk With an Agent CTA should open WhatsApp using:
+
++2348112835788
+
+Use the proper WhatsApp international format:
+
+https://wa.me/2348112835788
+
+Create a pre-filled WhatsApp message such as:
+
+"Hello Chubby Properties, I would like to speak with an agent about available properties."
+
+The hero should contain subtle visual effects but remain professional.
+
+==================================================
+4. NAVIGATION
+==================================================
+
+Desktop navigation:
+
+Logo / CHUBBY PROPERTIES
+
+Links:
+
+Home
+Properties
+Land
+About Us
+Services
+Sell With Us
+Contact
+
+Make "Sell With Us" visually prominent but tasteful.
+
+Mobile navigation:
+Create a polished responsive mobile menu.
+
+==================================================
+5. FEATURED PROPERTIES
+==================================================
+
+Create a premium Featured Properties section.
+
+Only use the TWO REAL PROPERTY PHOTOGRAPHS supplied with this project.
+
+IMPORTANT:
+The photographs must be correctly matched:
+
+PHOTO 1:
+The image showing the uncompleted building belongs to:
+
+"Uncompleted 2-Storey Building for Sale in Ahiaeke Ibeku, Umuahia"
+
+PHOTO 2:
+The farmland/palm plantation image belongs to:
+
+"300 Plots of Farmland for Sale in Abam, Abia State"
+
+Do NOT reverse these images.
+
+--------------------------------------------------
+PROPERTY 1
+--------------------------------------------------
+
+Title:
+
+300 Plots of Farmland for Sale in Abam, Abia State
+
+Location:
+
+Abam, Abia State, Nigeria
+
+Availability:
+
+300 Plots Available
+
+Price:
+
+₦300,000 / Plot
+
+IMPORTANT:
+NEVER display ₦300,000 as the total price.
+
+The UI must clearly communicate:
+
+₦300,000 / Plot
+
+and separately:
+
+300 Plots Available
+
+Category:
+
+Land / Farmland
+
+Listing Type:
+
+For Sale
+
+--------------------------------------------------
+PROPERTY 2
+--------------------------------------------------
+
+Title:
+
+Uncompleted 2-Storey Building for Sale in Ahiaeke Ibeku, Umuahia
+
+Location:
+
+Ahiaeke Ibeku, Umuahia, Abia State, Nigeria
+
+Price:
+
+₦80,000,000
+
+Category:
+
+Building / Property
+
+Listing Type:
+
+For Sale
+
+==================================================
+6. PROPERTY CARD ACTIONS
+==================================================
+
+Each property card MUST have two distinct actions:
+
+[View Details]
+
+and
+
+[Buy / Enquire]
+
+View Details:
+Goes to a dedicated property details page.
+
+Buy / Enquire:
+Opens WhatsApp directly.
+
+Example WhatsApp message:
+
+"Hello Chubby Properties, I am interested in the 300 plots of farmland for sale in Abam, Abia State. I would like more information."
+
+For the building:
+
+"Hello Chubby Properties, I am interested in the uncompleted 2-storey building for sale in Ahiaeke Ibeku, Umuahia. I would like more information."
+
+==================================================
+7. PROPERTY DETAILS PAGES
+==================================================
+
+Create a separate Flask route/page for EACH property.
+
+Example:
+
+/properties/farmland-abam-abia
+
+/properties/uncompleted-2-storey-building-ahiaeke-ibeku
+
+These should look like premium individual property landing pages.
+
+Each page should contain:
+
+- Large property image
+- Property title
+- Location
+- Price
+- Availability where applicable
+- Category
+- Listing type
+- Property overview
+- Description
+- Location information
+- Key property information
+- Strong WhatsApp CTA
+- Contact/talk-to-agent CTA
+- Related properties section
+
+Do NOT invent factual property features that have not been supplied.
+
+For example, do not claim:
+- bedrooms
+- bathrooms
+- exact land dimensions
+- title documents
+- road access
+- electricity
+- water
+- security
+- proximity to landmarks
+
+unless explicitly supplied.
+
+Use carefully written content that is accurate without inventing facts.
+
+==================================================
+8. WHY CHOOSE CHUBBY PROPERTIES
+==================================================
+
+Create a premium section titled:
+
+"Why Choose Chubby Properties?"
+
+Use these points:
+
+Nigerian Market Expertise
+Transparent & Client-Focused Service
+Nationwide Property Solutions
+Professional Guidance
+Commitment to Excellence & Integrity
+
+Use elegant icons and short supporting descriptions.
+
+==================================================
+9. SERVICES
+==================================================
+
+Create a Services section using the company's actual services:
+
+Real Estate Consultancy
+Property Management
+Buying & Selling of Properties
+Real Estate Investment Advisory
+Property Valuation & Documentation Support
+
+Each service should have:
+- icon
+- title
+- concise professional description
+
+Do not exaggerate services beyond the supplied information.
+
+==================================================
+10. ABOUT SECTION
+==================================================
+
+Create a premium About preview on the homepage.
+
+Heading:
+
+"Real Estate. Simplified. Value. Delivered."
+
+Use the company's real information.
+
+Explain that Chubby Property Development Ltd operates across Nigeria and helps individuals and businesses buy, sell, manage, and invest in properties.
+
+Include:
+
+"Real estate is more than just property—it is about creating value and building lasting relationships."
+
+CTA:
+
+"Learn More About Us"
+
+==================================================
+11. FULL ABOUT PAGE
+==================================================
+
+Create:
+
+/about
+
+The About page should include:
+
+- Company introduction
+- Who We Are
+- What We Do
+- Mission
+- Why Choose Us
+- Company philosophy
+- Strong contact CTA
+
+Do NOT fabricate:
+- founding year
+- number of employees
+- number of clients
+- awards
+- certifications
+- years of experience
+- offices
+- statistics
+
+unless explicitly provided later.
+
+==================================================
+12. SERVICES PAGE
+==================================================
+
+Create:
+
+/services
+
+Build a polished services page covering:
+
+- Real Estate Consultancy
+- Property Management
+- Buying & Selling
+- Investment Advisory
+- Property Valuation & Documentation Support
+
+==================================================
+13. SELL WITH US
+==================================================
+
+Create:
+
+/sell-with-us
+
+IMPORTANT:
+This is NOT a complicated property-upload platform.
+
+It is simply a lead-generation form that eventually moves the property owner into WhatsApp.
+
+Form fields:
+
+Full Name
+Phone Number
+Property Type
+Property Location
+Asking Price
+Property Description
+Optional Property Photo
+
+CTA:
+
+"Submit Property"
+
+When submitted, construct a WhatsApp message and open WhatsApp:
+
+https://wa.me/2348112835788
+
+Example:
+
+"Hello Chubby Properties, I would like to list my property for sale.
+
+Name:
+Phone:
+Property Type:
+Location:
+Asking Price:
+Description:"
+
+The website does not need a database for this yet.
+
+==================================================
+14. CONTACT PAGE
+==================================================
+
+Create:
+
+/contact
+
+Include:
+
+- WhatsApp
+- Phone/contact CTA
+- enquiry form
+- professional contact layout
+
+WhatsApp:
+
++234 811 283 5788
+
+Make WhatsApp a major conversion channel throughout the website.
+
+==================================================
+15. FOOTER
+==================================================
+
+Create a premium footer containing:
+
+Chubby Property Development Ltd
+
+Short company description.
+
+Navigation links.
+
+Services.
+
+Properties.
+
+Contact.
+
+WhatsApp:
+
++234 811 283 5788
+
+Use a subtle premium design rather than a huge footer.
+
+==================================================
+16. SEO-FRIENDLY CONTENT STRUCTURE
+==================================================
+
+For this phase, implement strong ON-PAGE SEO foundations.
+
+Do NOT attempt to guarantee rankings.
+
+Every page should have:
+
+- unique title
+- unique meta description
+- logical H1
+- proper H2/H3 hierarchy
+- descriptive image alt text
+- semantic HTML
+- clean URLs
+- internal links
+
+Property pages should naturally target their actual location and property type.
+
+Examples:
+
+"farmland for sale in Abam, Abia State"
+
+"property for sale in Umuahia"
+
+"uncompleted building for sale in Ahiaeke Ibeku"
+
+Do NOT keyword stuff.
+
+The content should read naturally.
+
+Also include appropriate Open Graph metadata.
+
+Prepare the project so advanced SEO can be added later.
+
+==================================================
+17. RESPONSIVENESS
+==================================================
+
+The website MUST be excellent on:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile
+
+Do not simply shrink the desktop version.
+
+Design the mobile experience intentionally.
+
+The property cards, navigation, typography, hero and CTAs must all work beautifully on small screens.
+
+==================================================
+18. ANIMATIONS
+==================================================
+
+Use subtle premium animation:
+
+- hero entrance
+- image reveal
+- card hover
+- scroll reveal
+- button interactions
+- smooth page transitions where appropriate
+
+Do NOT over-animate the website.
+
+Performance is more important than flashy effects.
+
+==================================================
+19. TECHNOLOGY
+==================================================
+
+Use:
+
+Python
+Flask
+HTML5
+CSS3
+Vanilla JavaScript
+
+You may use:
+- Lucide icons
+- Google Fonts if appropriate
+- lightweight frontend libraries only when genuinely useful
+
+Do not introduce React/Next.js unless absolutely necessary.
+
+The application should be a clean Flask project.
+
+Suggested structure:
+
+/app.py
+/templates/
+/static/
+/static/css/
+/static/js/
+/static/images/
+/static/uploads/
+
+Use Flask templates with a reusable base.html.
+
+==================================================
+20. CODE QUALITY
+==================================================
+
+Make the code clean and easy for another developer to continue.
+
+Use reusable components/templates where appropriate.
+
+Do not hardcode the same navigation/footer repeatedly.
+
+Keep CSS organized.
+
+Keep JavaScript organized.
+
+Use meaningful variable and file names.
+
+==================================================
+21. IMPORTANT CONTENT RULE
+==================================================
+
+Do NOT invent property facts.
+
+Only the supplied property information is factual.
+
+If information is missing, write around the missing information instead of making something up.
+
+==================================================
+22. FINAL DELIVERABLE
+==================================================
+
+I want the COMPLETE WORKING FLASK PROJECT.
+
+Provide:
+
+1. All project files
+2. Folder structure
+3. requirements.txt
+4. Flask application
+5. Templates
+6. CSS
+7. JavaScript
+8. Property pages
+9. About page
+10. Services page
+11. Sell With Us page
+12. Contact page
+13. All supplied property images correctly placed
+14. README with setup instructions
+
+The site must actually run locally.
+
+After building it, TEST EVERY PAGE AND EVERY LINK.
+
+Test:
+- navigation
+- property details
+- WhatsApp buttons
+- Sell With Us form
+- mobile menu
+- responsive layouts
+- missing routes
+- images
+- forms
+- buttons
+
+==================================================
+23. DEPLOYMENT
+==================================================
+
+After the project is completed and tested, deploy the Flask application if your environment supports deployment.
+
+If deployment succeeds, give me the ACTUAL live URL.
+
+Do NOT fabricate or assume a URL.
+
+If deployment is not possible in your environment, clearly tell me what deployment configuration remains and provide the complete project files.
+
+==================================================
+24. DESIGN PRIORITY
+==================================================
+
+The most important thing is NOT quantity of features.
+
+The priority is:
+
+1. Premium visual design
+2. Professional real-estate brand
+3. Excellent property presentation
+4. Mobile responsiveness
+5. Strong UX
+6. Clear WhatsApp conversion
+7. Accurate company content
+8. Clean Flask architecture
+9. SEO-ready page structure
+10. Easy future expansion
+
+The final result should look like a website a professional Nigerian real-estate company could actually launch.

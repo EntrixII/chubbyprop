@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="hero">
+  <div class="hero-image" role="img" aria-label="Premium modern residential property at dusk"></div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <div class="hero-copy reveal">
+      <span class="eyebrow eyebrow-gold">NIGERIAN REAL ESTATE, CONSIDERED</span>
+      <h1>Find Land.<br><em>Build Wealth.</em><br>Own Property.</h1>
+      <p>Discover carefully selected properties and investment opportunities across Nigeria.</p>
+      <div class="hero-actions">
+        <a class="button button-gold" href="#featured-properties">Explore Properties <i data-lucide="arrow-down-right"></i></a>
+        <a class="button button-ghost" href="{{ whatsapp_url }}" target="_blank" rel="noopener">Talk With an Agent <i data-lucide="message-circle"></i></a>
+      </div>
+    </div>
+    <div class="hero-note reveal"><span class="line"></span><span>Property decisions,<br>with more clarity.</span></div>
+  </div>
+  <div class="hero-scroll"><span>Scroll to explore</span><i data-lucide="arrow-down"></i></div>
+</section>
+
+<section class="trust-strip">
+  <div class="container trust-grid">
+    <div><strong>01</strong><span>Market-led<br>perspective</span></div>
+    <div><strong>02</strong><span>Transparent<br>communication</span></div>
+    <div><strong>03</strong><span>Nationwide<br>solutions</span></div>
+    <div><strong>04</strong><span>Value beyond<br>the transaction</span></div>
+  </div>
+</section>
+
+<section class="section section-light" id="featured-properties">
+  <div class="container">
+    <div class="section-heading split-heading reveal">
+      <div><span class="eyebrow">SELECTED OPPORTUNITIES</span><h2>Property with<br><em>purpose.</em></h2></div>
+      <div class="heading-side"><p>Explore current opportunities presented with the information you need to take the next step.</p><a class="text-link" href="{{ url_for('properties') }}">View all properties <i data-lucide="arrow-up-right"></i></a></div>
+    </div>
+    <div class="property-grid">{% for property in featured %}{% include 'partials/property_card.html' %}{% endfor %}</div>
+  </div>
+</section>
+
+<section class="section section-navy intro-band">
+  <div class="container intro-grid">
+    <div class="intro-number">CP<span>/01</span></div>
+    <div class="intro-copy reveal"><span class="eyebrow eyebrow-gold">THE CHUBBY APPROACH</span><h2>Real estate.<br><em>Simplified.</em><br>Value. Delivered.</h2></div>
+    <div class="intro-text reveal"><p>Chubby Property Development Ltd is a trusted real estate consultant and property management company operating across all states in Nigeria.</p><p>We help individuals and businesses buy, sell, manage, and invest in real estate with professionalism and transparency.</p><a class="button button-outline-light" href="{{ url_for('about') }}">Learn More About Us <i data-lucide="arrow-up-right"></i></a></div>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+    <div class="section-heading reveal"><span class="eyebrow">WHY CHUBBY PROPERTIES</span><h2>A better standard<br>for <em>property guidance.</em></h2></div>
+    <div class="why-grid">{% for item in why_choose_us %}<div class="why-item reveal"><div class="icon-box"><i data-lucide="{{ item.icon }}"></i></div><h3>{{ item.title }}</h3><p>{{ item.description }}</p></div>{% endfor %}</div>
+  </div>
+</section>
+
+<section class="section service-section">
+  <div class="container">
+    <div class="section-heading split-heading reveal"><div><span class="eyebrow">WHAT WE DO</span><h2>Expertise that<br>moves with <em>you.</em></h2></div><div class="heading-side"><p>From first conversation to considered action, our services are designed around the realities of property in Nigeria.</p><a class="text-link" href="{{ url_for('services') }}">Explore services <i data-lucide="arrow-up-right"></i></a></div></div>
+    <div class="service-list">{% for service in services %}<a class="service-row reveal" href="{{ url_for('services') }}"><span class="service-icon"><i data-lucide="{{ service.icon }}"></i></span><span class="service-title">{{ service.title }}</span><span class="service-desc">{{ service.description }}</span><i class="service-arrow" data-lucide="arrow-up-right"></i></a>{% endfor %}</div>
+  </div>
+</section>
+
+<section class="cta-panel section-navy">
+  <div class="container cta-inner reveal"><span class="eyebrow eyebrow-gold">LET'S TALK PROPERTY</span><h2>Have a property<br>question?</h2><p>Whether you are buying, selling, managing, or exploring an opportunity, start with a direct conversation.</p><a class="button button-gold" href="{{ whatsapp_url }}" target="_blank" rel="noopener">Talk With an Agent <i data-lucide="arrow-up-right"></i></a></div>
+</section>
+{% endblock %}

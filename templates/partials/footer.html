@@ -1,0 +1,33 @@
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-brand-block">
+      <a class="brand brand-light" href="{{ url_for('home') }}">
+        <span class="brand-mark">CP</span>
+        <span class="brand-copy"><strong>CHUBBY</strong><small>PROPERTY DEVELOPMENT LTD</small></span>
+      </a>
+      <p>Trusted real estate consultancy and property management solutions across Nigeria.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Explore</h3>
+      <a href="{{ url_for('properties') }}">Properties</a>
+      <a href="{{ url_for('about') }}">About Us</a>
+      <a href="{{ url_for('services') }}">Services</a>
+      <a href="{{ url_for('sell_with_us') }}">Sell With Us</a>
+    </div>
+    <div class="footer-links">
+      <h3>Connect</h3>
+      <a href="{{ url_for('contact') }}">Contact Us</a>
+      <a href="{{ whatsapp_url }}" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="tel:+2348112835788">{{ whatsapp_display }}</a>
+    </div>
+    <div class="footer-cta">
+      <span class="eyebrow">READY WHEN YOU ARE</span>
+      <h3>Start a more informed property conversation.</h3>
+      <a class="button button-gold button-small" href="{{ whatsapp_url }}" target="_blank" rel="noopener">Talk With an Agent <i data-lucide="arrow-up-right"></i></a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© {{ current_year }} Chubby Property Development Ltd</span>
+    <span>Real estate. Simplified. Value. Delivered.</span>
+  </div>
+</footer>

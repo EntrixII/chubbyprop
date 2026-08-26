@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="page-hero section-navy">
+  <div class="container page-hero-inner"><span class="eyebrow eyebrow-gold">CURRENT OPPORTUNITIES</span><h1>Properties with<br><em>potential.</em></h1><p>Explore selected land and property opportunities available through Chubby Property Development Ltd.</p></div>
+</section>
+<section class="section section-light" id="land">
+  <div class="container"><div class="listing-toolbar"><span class="eyebrow">{{ properties|length }} SELECTED LISTINGS</span><span class="toolbar-note">Information-led property discovery</span></div><div class="property-grid property-grid-wide">{% for property in properties %}{% include 'partials/property_card.html' %}{% endfor %}</div></div>
+</section>
+<section class="section soft-cream"><div class="container narrow-cta"><span class="eyebrow">LOOKING FOR SOMETHING SPECIFIC?</span><h2>Let’s talk about<br><em>your next move.</em></h2><p>Our team can help you navigate your property goals with a clear, professional conversation.</p><a class="button button-dark" href="{{ url_for('contact') }}">Contact Chubby Properties <i data-lucide="arrow-up-right"></i></a></div></section>
+{% endblock %}

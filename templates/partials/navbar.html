@@ -1,0 +1,29 @@
+<header class="site-header" data-header>
+  <div class="container nav-wrap">
+    <a class="brand" href="{{ url_for('home') }}" aria-label="Chubby Properties home">
+      <span class="brand-mark">CP</span>
+      <span class="brand-copy"><strong>CHUBBY</strong><small>PROPERTY DEVELOPMENT LTD</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation" data-menu-toggle>
+      <span class="sr-only">Toggle navigation</span><i data-lucide="menu"></i>
+    </button>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('properties') }}">Properties</a>
+      <a href="{{ url_for('properties') }}#land">Land</a>
+      <a href="{{ url_for('about') }}">About Us</a>
+      <a href="{{ url_for('services') }}">Services</a>
+      <a class="nav-highlight" href="{{ url_for('sell_with_us') }}">Sell With Us <i data-lucide="arrow-up-right"></i></a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+    </nav>
+  </div>
+  <nav class="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation" data-mobile-nav>
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('properties') }}">Properties</a>
+    <a href="{{ url_for('properties') }}#land">Land</a>
+    <a href="{{ url_for('about') }}">About Us</a>
+    <a href="{{ url_for('services') }}">Services</a>
+    <a href="{{ url_for('sell_with_us') }}">Sell With Us</a>
+    <a href="{{ url_for('contact') }}">Contact</a>
+  </nav>
+</header>
